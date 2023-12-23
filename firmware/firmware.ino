@@ -17,7 +17,7 @@ void os_getArtEui (u1_t* buf) { memcpy_P(buf, APPEUI, 8);}
 void os_getDevEui (u1_t* buf) { memcpy_P(buf, DEVEUI, 8);}
 void os_getDevKey (u1_t* buf) { memcpy_P(buf, APPKEY, 16);}
 
-const unsigned TX_INTERVAL = 20;
+const unsigned TX_INTERVAL = 1200;
 
 static uint8_t mydata[20];
 static osjob_t sendjob;
